@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Atelier | Cake Shop Demo</title>
+    <meta name="description" content="A sample cake shop website concept.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="demo-banner">
+        SAMPLE WEBSITE CONCEPT — NOT AN OFFICIAL SHOP WEBSITE
+    </div>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="brand">
+                <span class="logo">S</span>
+                Sweet Atelier
+            </a>
+
+            <button id="menuToggle" class="menu-toggle"
+                    aria-label="Open menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#cakes">Our Cakes</a>
+                <a href="#story">Our Story</a>
+                <a href="#custom">Custom Orders</a>
+            </div>
+
+            <a href="#custom" class="button">Plan a Cake</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">SMALL MOMENTS. BEAUTIFUL CAKES.</p>
+
+                <h1>
+                    A little sweetness for
+                    <em>every</em> celebration.
+                </h1>
+
+                <p class="intro">
+                    Thoughtful details, lovely flavours, and cakes made
+                    to be part of your favourite memories. Explore our
+                    sample collection and imagine your next celebration.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#cakes" class="button">
+                        Explore the Collection
+                    </a>
+
+                    <a href="#custom" class="button button-light">
+                        Request a Custom Cake
+                    </a>
+                </div>
+
+                <p class="note">
+                    Sample concept only. Product details and prices are placeholders.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+                    alt="Decorated celebration cake">
+
+                <div class="image-note">
+                    <strong>Made with care</strong>
+                    <span>A sweet detail for every special moment.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section products" id="cakes">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">THE COLLECTION</p>
+                        <h2>Find your favourite.</h2>
+                    </div>
+
+                    <p>
+                        Browse our sample cake styles and discover
+                        something special for your next celebration.
+                    </p>
+                </div>
+
+                <div class="filters">
+                    <button class="filter active" data-filter="all">
+                        All Cakes
+                    </button>
+                    <button class="filter" data-filter="birthday">
+                        Birthday
+                    </button>
+                    <button class="filter" data-filter="chocolate">
+                        Chocolate
+                    </button>
+                    <button class="filter" data-filter="classic">
+                        Classic
+                    </button>
+                    <button class="filter" data-filter="celebration">
+                        Celebration
+                    </button>
+                </div>
+
+                <div class="product-grid">
+                    <article class="product-card"
+                             data-category="birthday celebration">
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                            alt="Celebration cake"
+                            loading="lazy">
+
+                        <div class="product-info">
+                            <p class="category">Birthday · Celebration</p>
+                            <h3>Rosé Celebration</h3>
+                            <p class="description">
+                                Soft layers with elegant decorative details.
+                            </p>
+
+                            <div class="product-footer">
+                                <span class="price">Rs. 1,800*</span>
+                                <button class="details-button"
+                                        data-product="Rosé Celebration">
+                                    Details ↗
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card"
+                             data-category="chocolate">
+                        <img
+                            src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=700&q=80"
+                            alt="Chocolate cake"
+                            loading="lazy">
+
+                        <div class="product-info">
+                            <p class="category">Chocolate</p>
+                            <h3>Midnight Cocoa</h3>
+                            <p class="description">
+                                A rich chocolate-inspired centrepiece.
+                            </p>
+
+                            <div class="product-footer">
+                                <span class="price">Rs. 1,600*</span>
+                                <button class="details-button"
+                                        data-product="Midnight Cocoa">
+                                    Details ↗
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card"
+                             data-category="classic">
+                        <img
+                            src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80"
+                            alt="Small cakes and cupcakes"
+                            loading="lazy">
+
+                        <div class="product-info">
+                            <p class="category">Classic</p>
+                            <h3>Vanilla Garden</h3>
+                            <p class="description">
+                                A light, timeless style made for sharing.
+                            </p>
+
+                            <div class="product-footer">
+                                <span class="price">Rs. 1,400*</span>
+                                <button class="details-button"
+                                        data-product="Vanilla Garden">
+                                    Details ↗
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card"
+                             data-category="birthday celebration">
+                        <img
+                            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                            alt="Layered berry cake"
+                            loading="lazy">
+
+                        <div class="product-info">
+                            <p class="category">Birthday · Celebration</p>
+                            <h3>Berry Blush</h3>
+                            <p class="description">
+                                Fresh fruit details with a festive look.
+                            </p>
+
+                            <div class="product-footer">
+                                <span class="price">Rs. 2,000*</span>
+                                <button class="details-button"
+                                        data-product="Berry Blush">
+                                    Details ↗
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="note">
+                    *Example prices only. These are not verified shop prices.
+                </p>
+            </div>
+        </section>
+
+        <section class="section story" id="story">
+            <div class="container story-grid">
+                <img
+                    class="story-photo"
+                    src="https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=900&q=85"
+                    alt="Baker preparing a cake"
+                    loading="lazy">
+
+                <div>
+                    <p class="eyebrow">A THOUGHTFUL TOUCH</p>
+                    <h2>Not just dessert. A part of the celebration.</h2>
+
+                    <p class="story-text">
+                        A good cake-shop website helps customers discover
+                        flavours, compare options, and ask about custom
+                        designs. This section can tell the real shop's
+                        story after the owner approves the concept.
+                    </p>
+
+                    <div class="features">
+                        <div>
+                            <strong>Made for you</strong>
+                            <span>Custom designs and celebration ideas</span>
+                        </div>
+
+                        <div>
+                            <strong>Easy to browse</strong>
+                            <span>Photos and clear product details</span>
+                        </div>
+
+                        <div>
+                            <strong>Phone friendly</strong>
+                            <span>A responsive mobile layout</span>
+                        </div>
+
+                        <div>
+                            <strong>Simple enquiries</strong>
+                            <span>A clear way to ask about orders</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section custom" id="custom">
+            <div class="container custom-grid">
+                <div>
+                    <p class="eyebrow">LET'S IMAGINE IT</p>
+                    <h2>Have a celebration in mind?</h2>
+
+                    <p class="muted">
+                        This sample form demonstrates how customers could
+                        describe a cake they would like to order.
+                    </p>
+
+                    <div class="notice">
+                        <strong>Demo note:</strong>
+                        This form does not send or store personal information.
+                    </div>
+                </div>
+
+                <form id="enquiryForm">
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="customerName">Your name</label>
+                            <input id="customerName"
+                                   type="text"
+                                   placeholder="Your name"
+                                   required>
+                        </div>
+
+                        <div class="field">
+                            <label for="occasion">Occasion</label>
+                            <select id="occasion" required>
+                                <option value="">Choose one</option>
+                                <option>Birthday</option>
+                                <option>Wedding</option>
+                                <option>Anniversary</option>
+                                <option>Other celebration</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="date">Preferred date</label>
+                            <input id="date" type="date">
+                        </div>
+
+                        <div class="field">
+                            <label for="size">Approximate size</label>
+                            <select id="size">
+                                <option>Not decided</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+
+                        <div class="field full">
+                            <label for="details">Cake idea</label>
+                            <textarea id="details"
+                                      placeholder="Flavour, colour, or design idea..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="button" type="submit">
+                            Preview Enquiry
+                        </button>
+                        <span class="note">Demo only · No message is sent.</span>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section faq">
+            <div class="container">
+                <div class="section-heading centered">
+                    <div>
+                        <p class="eyebrow">A FEW DETAILS</p>
+                        <h2>Helpful to know.</h2>
+                    </div>
+                </div>
+
+                <div class="faq-list">
+                    <details>
+                        <summary>Can I request a custom design?</summary>
+                        <p>
+                            This demo shows how a custom cake enquiry
+                            could work. A real website should use the
+                            shop's actual ordering process.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Are these prices final?</summary>
+                        <p>
+                            No. All prices are examples and must be
+                            replaced with prices approved by the business.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>How do I place an order?</summary>
+                        <p>
+                            This sample form does not send information.
+                            A real website needs a working contact method.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <div>
+                <a href="#home" class="brand footer-brand">
+                    <span class="logo">S</span> Sweet Atelier
+                </a>
+                <p>Sample cake-shop website concept.</p>
+            </div>
+
+            <p class="footer-note">
+                Demo only. Not affiliated with or endorsed by a real cake
+                shop. Product details and prices are illustrative.
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="modalBackdrop"
+         role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal">
+            <button class="modal-close" id="modalClose"
+                    aria-label="Close details">×</button>
+
+            <p class="eyebrow">CAKE DETAILS</p>
+            <h3 id="modalTitle">Cake name</h3>
+            <p id="modalText"></p>
+
+            <button class="button" id="modalEnquire">
+                Ask About a Similar Cake
+            </button>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
